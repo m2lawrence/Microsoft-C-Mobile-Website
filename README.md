@@ -23,3 +23,5 @@ Controller to controlle the data from the Model to the View.
 View to display my razor website page.
 Entity Framework 6 to connect to the backend Microsoft SQL database.
 Microsoft SQL Server MS 2019 backend database to store my data. 
+
+I do this free to help my church.
