@@ -1,8 +1,8 @@
 # Microsoft-C-Sharp-Mobile-Website
 
-http://www.stjohnspleckandbescotwalsall.com/Default.aspx
+http://www.stjohnspleckandbescotwalsall.com
 
-I am the Saint John's Church ⛪️ Microsoft C# full stack website developer.
+I am the Saint John's Church ⛪️ Microsoft C# MVC5 EF6 full stack website developer.
 
 Jan 2019 to present. 
 
