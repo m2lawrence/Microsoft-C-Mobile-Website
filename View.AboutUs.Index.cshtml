@@ -1,0 +1,83 @@
+﻿@* Michael Lawrence BSc (HONS) *@
+
+@*add namespace*@
+@using MVC5EF6Tables.Models;
+
+@*add class so you don't have to use the fully qualified address, IEnumerable to list items from model.*@
+@model IEnumerable<AboutUs>
+
+@*include image "html helper" extension method class below:*@
+@using MVC5EF6Tables.CustomHtmlHelpers;
+
+@{
+    ViewBag.Title = "About Us";
+}
+
+<link rel="icon" href="~/images/TitleIcons/team24.png" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Growing in Christ, St John's the Evangelist, Walsall, Pleck and Bescot, Parish Church." />
+<meta name="keywords" content="St John's, Church, Pleck, Walsall, About Us, Christenings, Weddings, Funerals, Growing in Christ, St John's the Evangelist, Walsall, Pleck and Bescot, Parish Church" />
+
+<div style="font-family: Arial">
+
+    <div class="container pt-2 mt-5">
+
+        @* MikesJumbotron *@
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card border-warning MikesJumbotron pt-4 pb-4 pl-3 pr-3 pic1">
+                    <div class="centered">
+                        <div class="card-title text-white text-center">
+                            <h3 class="card-title text-center"><img src="~/images/TitleIcons/user-group-icon24.png" class="icons-25px" /><i> About Us</i></h3>
+                        </div>
+                    </div>
+                </div>
+            </div> @*close column*@
+        </div>  @*close row*@
+
+        <div class="row">
+            @foreach (AboutUs aboutUs in Model)
+            {
+                // make a nice card to display the info in.
+                <div class="col-md-12 mt-2">
+                    <div class="card border-primary bg-primary pic1">
+                        <div class="card-body text-white">
+
+                            <div class="card-title text-center text-white">
+                                @Html.Raw(Server.HtmlDecode(aboutUs.Title))
+                            </div>
+                            <div class="card-text mb-3">
+                                @Html.Raw(Server.HtmlDecode(aboutUs.Info))
+                                @*@aboutUs.Info*@
+                            </div>
+                            <div class="card-text">
+                                @*use an image html helper below: *@
+                                @Html.Image(@aboutUs.Photo, @aboutUs.AlternateText)
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+
+        <br />
+        <br />
+
+        <!-- footer -->
+        <nav class="navbar fixed-bottom navbar-light bg-light mt-5">
+            <a class="navbar-text text-primary" href="#"> <img src="~/images/images1/System-Windows-icon.png" class="icons-25px" /><i> MVC</i></a>
+
+            <i><a id="myBtn" onclick="topFunction()" class="navbar-btn btn-text btn-danger btn-sm pull-right"><i class="fa fa-fa fa-arrow-up"></i> <i>Top</i></a></i>
+
+            <i><a href="https://www.bible.com/en-GB" target="_blank" class="navbar-btn btn-text btn-success btn-sm pull-right"><img src="~/images/TitleIcons/Bible24.png" class="icons-buttons" />  <i>Bible</i></a></i>
+
+            <a href="@Url.Action("Contact", "Home")" class="navbar-btn btn-primary"><img src="~/images/TitleIcons/6060-icon32.png" class="icons-25px" /><i>Contact</i> </a>
+        </nav>
+
+    </div>
+</div>
