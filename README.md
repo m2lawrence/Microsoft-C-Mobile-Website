@@ -16,5 +16,10 @@ ASP.Net platform for the web pages,
 Jquery, JavaScript and CSS to make the mobile
 menu button animate and also the drop down menus caret
 rotate up and down once clicked on. 
-Microsoft SQL Server backend database to store data. 
-------
+
+DB Context class to get a list from the EF6 Microsoft SQL Database.
+Model is where I hold my data: int string get set.
+Controller to controlle the data from the Model to the View.
+View to display my razor website page.
+Entity Framework 6 to connect to the backend Microsoft SQL database.
+Microsoft SQL Server MS 2019 backend database to store my data. 
