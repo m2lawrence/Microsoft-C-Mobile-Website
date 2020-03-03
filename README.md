@@ -1,4 +1,4 @@
-# Microsoft-C-Sharp-Mobile-Website
+# Microsoft-C-Sharp-Mobile-Website. 
 
 http://www.stjohnspleckandbescotwalsall.com
 
@@ -19,7 +19,7 @@ rotate up and down once clicked on.
 
 DB Context class to get a list from the EF6 Microsoft SQL Database.
 Model is where I hold my data: int string get set.
-Controller to controlle the data from the Model to the View.
+Controller to control the data from the Model to the View.
 View to display my razor website page.
 Entity Framework 6 to connect to the backend Microsoft SQL database.
 Microsoft SQL Server MS 2019 backend database to store my data. 
