@@ -24,4 +24,4 @@ View to display my razor website page.
 Entity Framework 6 to connect to the backend Microsoft SQL database.
 Microsoft SQL Server MS 2019 backend database to store my data. 
 
-I do this free to help my church.
+As a PCC Member of the church, I do this free to help them.
